@@ -16,7 +16,7 @@
 
 > [!IMPORTANT]
 > Bolt is an implementation of permissionless proposer commitments that is fully compatible with PBS.
-> In its essence, it consists in a fork of the MEV-Boost stack that allows users to request commitments
+> In its essence, it consists of a fork of the MEV-Boost stack that allows users to request commitments
 > like preconfirmations from proposers, and then adds a way for proposers to commit to transaction
 > inclusion in a way that is verifiable on-chain.
 
