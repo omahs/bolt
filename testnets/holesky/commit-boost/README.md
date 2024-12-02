@@ -4,7 +4,7 @@ This is a setup guide for running Bolt on Holesky using [Commit-Boost](https://c
 
 Here is a quick overview of the architecture described in [`cb.docker-compose.yml`](./cb.docker-compose.yml):
 
-- `bolt-boost`: a Commit-Boost moodule built by the Bolt team that builds upon the standard PBS module and adds
+- `bolt-boost`: a Commit-Boost module built by the Bolt team that builds upon the standard PBS module and adds
   the [constraints API](https://docs.boltprotocol.xyz/technical-docs/api/builder).
 - `bolt-sidecar`: a separate service, in the form of Commit-Boost "commit" module, that is responsible for
   signing incoming preconfirmation requests, managing local fallback blocks and keeping track of the state.
