@@ -241,7 +241,7 @@ To generate the JSON file containing the pubkeys, you can use the `bolt pubkeys`
 command. See `bolt pubkeys --help` for more info.
 
 Fill the required options and run the script. If the script executed
-succesfully, your validators were registered.
+successfully, your validators were registered.
 
 ## Bolt Network Entrypoint
 
@@ -415,7 +415,7 @@ Options:
 
 A note on the `--salt` and `--expiry` parameters:
 
-- `salt` -- an unique 32 bytes value to avoid replay attacks. To generate it on
+- `salt` -- a unique 32 bytes value to avoid replay attacks. To generate it on
   both Linux and MacOS you can run:
 
   ```bash
@@ -451,7 +451,7 @@ Options:
 
 After all of the steps above have been completed, we can proceed with running the off-chain infrastructure.
 
-There are various way to run the Bolt Sidecar depending on your preferences and your preferred signing methods:
+There are various ways to run the Bolt Sidecar depending on your preferences and your preferred signing methods:
 
 1. Docker mode (recommended)
 2. [Commit-Boost](https://commit-boost.github.io/commit-boost-client) mode (requires Docker)
@@ -603,7 +603,7 @@ in the `mev-boost` directory. The output of the command is a `mev-boost` binary.
 To run the `mev-boost` binary please read the official [documentation](https://boost.flashbots.net/).
 
 If you're already running MEV-Boost along with your beacon client it is
-recommended to choose another port this service in order to [avoid restarting
+recommended to choose another port of this service in order to [avoid restarting
 your beacon client](#avoid-restarting-the-beacon-node). Check out the linked
 section for more details.
 
@@ -760,7 +760,7 @@ Options:
           [env: BOLT_SIDECAR_BUILDER_PRIVATE_KEY=]
 
       --commitment-private-key <COMMITMENT_PRIVATE_KEY>
-          Secret ECDSA key to sign commitment messages with. The public key associated to it must be then used when registering the operator in the `BoltManager` contract
+          Secret ECDSA key to sign commitment messages with. The public key associated with it must be then used when registering the operator in the `BoltManager` contract
 
           [env: BOLT_SIDECAR_COMMITMENT_PRIVATE_KEY=]
 
@@ -862,7 +862,7 @@ Ethereum validators.
 > This is the recommended way to run the Bolt sidecar as it
 > doesn't expose the active validator signing keys to any additional risk.
 
-In order to create these delegation you can use the `bolt` CLI binary.
+In order to create these delegations you can use the `bolt` CLI binary.
 If you don't want to use it you can skip the following section.
 
 ### `bolt` CLI
@@ -1120,7 +1120,7 @@ the Bolt sidecar endpoint.
 
 However if you're already running a PBS sidecar like
 [MEV-Boost](https://boost.flashbots.net/) on the same machine then you can avoid
-the restart by following this steps when starting the Bolt sidecar:
+the restart by following these steps when starting the Bolt sidecar:
 
 1. Set the `--constraints-proxy-port` flag (or
    `BOLT_SIDECAR_CONSTRAINTS_PROXY_PORT` env) to the port previously occupied by
